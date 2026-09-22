@@ -1,0 +1,3520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Adarsh Footwear | Premium Footwear Store</title>
+
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    color: #161616;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar {
+    background: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 9px;
+
+    font-size: 13px;
+}
+
+.top-bar span {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background: white;
+
+    height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 15px rgba(0,0,0,0.08);
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.logo-icon {
+
+    width: 48px;
+    height: 48px;
+
+    background: #111;
+
+    color: #ffc107;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.logo h2 {
+
+    font-size: 21px;
+
+    letter-spacing: 1px;
+}
+
+
+.logo p {
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #d49a00;
+}
+
+
+.nav-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.cart-button {
+
+    border: none;
+
+    background: #111;
+
+    color: white;
+
+    padding: 11px 17px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+
+.cart-button:hover {
+
+    background: #d49a00;
+}
+
+
+.cart-count {
+
+    background: #ffc107;
+
+    color: #111;
+
+    border-radius: 50%;
+
+    padding: 3px 7px;
+
+    margin-left: 5px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 580px;
+
+    padding: 70px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8e2,
+            #ffffff
+        );
+}
+
+
+.hero-content {
+
+    width: 48%;
+}
+
+
+.hero-label {
+
+    color: #c48a00;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    font-size: 13px;
+}
+
+
+.hero h1 {
+
+    font-size: 62px;
+
+    line-height: 1.05;
+
+    margin: 18px 0;
+}
+
+
+.hero h1 span {
+
+    color: #c58d00;
+}
+
+
+.hero-description {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.primary-btn {
+
+    background: #111;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: none;
+}
+
+
+.primary-btn:hover {
+
+    background: #c58d00;
+}
+
+
+.secondary-btn {
+
+    background: white;
+
+    color: #111;
+
+    border: 1px solid #ddd;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.hero-image {
+
+    width: 48%;
+
+    position: relative;
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 390px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.18);
+}
+
+
+.hero-badge {
+
+    position: absolute;
+
+    right: -20px;
+
+    bottom: 25px;
+
+    background: #111;
+
+    color: white;
+
+    padding: 18px 22px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.hero-badge strong {
+
+    display: block;
+
+    color: #ffc107;
+
+    font-size: 23px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.features {
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    padding: 25px 7%;
+
+    gap: 15px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 12px;
+}
+
+
+.feature-icon {
+
+    font-size: 25px;
+}
+
+
+.feature h4 {
+
+    font-size: 14px;
+}
+
+
+.feature p {
+
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section {
+
+    padding: 75px 7%;
+}
+
+
+.section-header {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.section-label {
+
+    color: #c58d00;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+}
+
+
+.section-header h2 {
+
+    font-size: 40px;
+
+    margin-top: 10px;
+}
+
+
+.section-header p {
+
+    color: #777;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   CATEGORY FILTER
+===================================================== */
+
+.filters {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+
+.filter-btn {
+
+    border: 1px solid #ddd;
+
+    background: white;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    background: #111;
+
+    color: white;
+
+    border-color: #111;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-box {
+
+    max-width: 500px;
+
+    margin: 0 auto 35px;
+
+    position: relative;
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 30px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+.product-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+
+.product-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.12);
+}
+
+
+.product-image {
+
+    height: 255px;
+
+    background: #f2f2f2;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.product-card:hover
+.product-image img {
+
+    transform: scale(1.07);
+}
+
+
+.discount {
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 12px;
+
+    background: #e53935;
+
+    color: white;
+
+    padding: 6px 9px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+.new-label {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    background: #111;
+
+    color: white;
+
+    padding: 6px 9px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    z-index: 2;
+}
+
+
+.product-info {
+
+    padding: 18px;
+}
+
+
+.product-category {
+
+    color: #999;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.product-info h3 {
+
+    font-size: 17px;
+
+    margin: 7px 0;
+}
+
+
+.rating {
+
+    color: #f5a900;
+
+    font-size: 13px;
+}
+
+
+.price-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 12px 0;
+}
+
+
+.sale-price {
+
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+
+.mrp {
+
+    color: #999;
+
+    text-decoration: line-through;
+
+    font-size: 13px;
+}
+
+
+.size-label {
+
+    font-size: 12px;
+
+    color: #555;
+
+    display: block;
+
+    margin-bottom: 6px;
+}
+
+
+.size-select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+
+    outline: none;
+}
+
+
+.product-buttons {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+
+.add-cart {
+
+    border: 1px solid #111;
+
+    background: white;
+
+    color: #111;
+
+    padding: 11px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 12px;
+}
+
+
+.buy-now {
+
+    border: none;
+
+    background: #111;
+
+    color: white;
+
+    padding: 11px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 12px;
+}
+
+
+.add-cart:hover {
+
+    background: #eee;
+}
+
+
+.buy-now:hover {
+
+    background: #c58d00;
+}
+
+
+/* =====================================================
+   OFFER BANNER
+===================================================== */
+
+.offer-banner {
+
+    margin: 20px 7% 70px;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111,
+            #272727
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.offer-banner h2 {
+
+    font-size: 35px;
+}
+
+
+.offer-banner p {
+
+    color: #ccc;
+
+    margin-top: 8px;
+}
+
+
+.offer-banner span {
+
+    color: #ffc107;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about {
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 80px 7%;
+}
+
+
+.about-image,
+.about-content {
+
+    width: 50%;
+}
+
+
+.about-image img {
+
+    width: 100%;
+
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+.about-content h2 {
+
+    font-size: 40px;
+
+    margin: 12px 0 20px;
+}
+
+
+.about-content p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.about-list {
+
+    list-style: none;
+
+    margin: 20px 0;
+}
+
+
+.about-list li {
+
+    margin: 10px 0;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 7%;
+}
+
+
+.contact h2 {
+
+    font-size: 38px;
+}
+
+
+.contact > p {
+
+    color: #aaa;
+
+    margin: 12px 0 35px;
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.contact-card {
+
+    background: #202020;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+
+.contact-card-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact-card p {
+
+    color: #aaa;
+
+    margin-top: 7px;
+}
+
+
+/* =====================================================
+   CART
+===================================================== */
+
+.overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,0.55);
+
+    display: none;
+
+    z-index: 1999;
+}
+
+
+.overlay.active {
+
+    display: block;
+}
+
+
+.cart {
+
+    position: fixed;
+
+    top: 0;
+
+    right: -450px;
+
+    width: 430px;
+
+    max-width: 100%;
+
+    height: 100vh;
+
+    background: white;
+
+    z-index: 2000;
+
+    transition: 0.4s;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.cart.active {
+
+    right: 0;
+}
+
+
+.cart-header {
+
+    padding: 20px;
+
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.cart-close {
+
+    border: none;
+
+    background: none;
+
+    font-size: 22px;
+}
+
+
+.cart-items {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px;
+}
+
+
+.empty-cart {
+
+    text-align: center;
+
+    color: #888;
+
+    margin-top: 60px;
+}
+
+
+.cart-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.cart-item h4 {
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.cart-item p {
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+
+.remove {
+
+    border: none;
+
+    background: #e53935;
+
+    color: white;
+
+    padding: 7px 9px;
+
+    border-radius: 4px;
+
+    height: fit-content;
+
+    font-size: 11px;
+}
+
+
+.cart-footer {
+
+    padding: 20px;
+
+    border-top: 1px solid #ddd;
+}
+
+
+.cart-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.whatsapp-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    background: #25d366;
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.whatsapp-btn:hover {
+
+    background: #1da851;
+}
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+.toast {
+
+    position: fixed;
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        translateY(100px);
+
+    background: #111;
+
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 30px;
+
+    z-index: 5000;
+
+    transition: 0.4s;
+
+    opacity: 0;
+}
+
+
+.toast.show {
+
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #050505;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+}
+
+
+footer h2 {
+
+    color: #ffc107;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px) {
+
+    .products {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .hero h1 {
+
+        font-size: 48px;
+    }
+}
+
+
+@media(max-width:850px) {
+
+    .nav-links {
+
+        display: none;
+    }
+
+    .hero {
+
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+
+        width: 100%;
+    }
+
+    .features {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .products {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .about {
+
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+
+        width: 100%;
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .navbar {
+
+        padding: 0 4%;
+    }
+
+    .logo h2 {
+
+        font-size: 17px;
+    }
+
+    .hero {
+
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+    }
+
+    .hero-image img {
+
+        height: 280px;
+    }
+
+    .hero-badge {
+
+        right: 10px;
+    }
+
+    .features {
+
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+
+        padding: 55px 5%;
+    }
+
+    .products {
+
+        grid-template-columns: 1fr;
+    }
+
+    .offer-banner {
+
+        margin: 10px 5% 50px;
+
+        padding: 30px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .about {
+
+        padding: 60px 5%;
+    }
+
+    .about-content h2 {
+
+        font-size: 32px;
+    }
+
+    .cart {
+
+        width: 100%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    🔥 <span>Special Offer:</span>
+    Get up to 30% OFF on selected footwear
+
+</div>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            👟
+        </div>
+
+        <div>
+
+            <h2>आदर्श</h2>
+
+            <p>FOOTWEAR</p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#shop">Shop</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button
+            class="cart-button"
+            onclick="openCart()"
+        >
+
+            🛒 Cart
+
+            <span
+                class="cart-count"
+                id="cartCount"
+            >
+                0
+            </span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            WELCOME TO ADARSH FOOTWEAR
+        </div>
+
+
+        <h1>
+
+            Step Into
+            <span>Style.</span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Discover comfortable, stylish and
+            affordable footwear for every occasion.
+            Choose your favourite pair and order
+            directly through WhatsApp.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#shop"
+                class="primary-btn"
+            >
+                Shop Collection
+            </a>
+
+
+            <a
+                href="#contact"
+                class="secondary-btn"
+            >
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <!--
+        IMPORTANT:
+        Apni shop ki photo ko index.html ke
+        same folder mein shop.jpg naam se rakho.
+        -->
+
+        <img
+            src="shop.jpg"
+            alt="Adarsh Footwear Shop"
+        >
+
+
+        <div class="hero-badge">
+
+            <strong>20+</strong>
+
+            <small>
+                Footwear Styles
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            🚚
+        </div>
+
+        <div>
+
+            <h4>
+                Easy Ordering
+            </h4>
+
+            <p>
+                Order on WhatsApp
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            💯
+        </div>
+
+        <div>
+
+            <h4>
+                Quality Footwear
+            </h4>
+
+            <p>
+                Carefully selected
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            💰
+        </div>
+
+        <div>
+
+            <h4>
+                Great Prices
+            </h4>
+
+            <p>
+                Value for money
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            💬
+        </div>
+
+        <div>
+
+            <h4>
+                WhatsApp Support
+            </h4>
+
+            <p>
+                Quick enquiry
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SHOP
+===================================================== -->
+
+<section
+    class="section"
+    id="shop"
+>
+
+    <div class="section-header">
+
+        <div class="section-label">
+            OUR COLLECTION
+        </div>
+
+        <h2>
+            Find Your Perfect Pair
+        </h2>
+
+        <p>
+            Select a category or search for your favourite shoes.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search shoes..."
+            onkeyup="searchProducts()"
+        >
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filters">
+
+        <button
+            class="filter-btn active"
+            onclick="filterProducts('all', this)"
+        >
+            All
+        </button>
+
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('sports', this)"
+        >
+            Sports
+        </button>
+
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('casual', this)"
+        >
+            Casual
+        </button>
+
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('formal', this)"
+        >
+            Formal
+        </button>
+
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('sandals', this)"
+        >
+            Sandals
+        </button>
+
+
+        <button
+            class="filter-btn"
+            onclick="filterProducts('loafers', this)"
+        >
+            Loafers
+        </button>
+
+    </div>
+
+
+
+    <!-- PRODUCTS -->
+
+    <div
+        class="products"
+        id="products"
+    >
+
+
+        <!-- PRODUCT 1 -->
+
+        <div
+            class="product-card"
+            data-category="sports"
+            data-name="Red Running Sports Shoes"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    25% OFF
+                </span>
+
+                <span class="new-label">
+                    NEW
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800"
+                    alt="Red Running Sports Shoes"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Sports Shoes
+                </span>
+
+                <h3>
+                    Red Running Sports Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,499
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,999
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Red Running Sports Shoes',
+                        1499,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Red Running Sports Shoes',
+                        1499,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <div
+            class="product-card"
+            data-category="casual"
+            data-name="Classic White Casual Shoes"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    20% OFF
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800"
+                    alt="Classic Casual Shoes"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Casual Shoes
+                </span>
+
+                <h3>
+                    Classic White Casual Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,299
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,599
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Classic White Casual Shoes',
+                        1299,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Classic White Casual Shoes',
+                        1299,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <div
+            class="product-card"
+            data-category="formal"
+            data-name="Premium Black Formal Shoes"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    30% OFF
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=800"
+                    alt="Black Formal Shoes"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Formal Shoes
+                </span>
+
+                <h3>
+                    Premium Black Formal Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,799
+                    </span>
+
+                    <span class="mrp">
+                        ₹2,599
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Premium Black Formal Shoes',
+                        1799,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Premium Black Formal Shoes',
+                        1799,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <div
+            class="product-card"
+            data-category="sports"
+            data-name="Green White Sports Sneakers"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    15% OFF
+                </span>
+
+                <span class="new-label">
+                    NEW
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800"
+                    alt="Sports Sneakers"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Sports Shoes
+                </span>
+
+                <h3>
+                    Green White Sports Sneakers
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,699
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,999
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Green White Sports Sneakers',
+                        1699,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Green White Sports Sneakers',
+                        1699,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <div
+            class="product-card"
+            data-category="loafers"
+            data-name="Premium Navy Loafers"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    18% OFF
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=800"
+                    alt="Navy Loafers"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Loafers
+                </span>
+
+                <h3>
+                    Premium Navy Loafers
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,499
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,799
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Premium Navy Loafers',
+                        1499,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Premium Navy Loafers',
+                        1499,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <div
+            class="product-card"
+            data-category="sandals"
+            data-name="Premium Leather Sandals"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    25% OFF
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=800"
+                    alt="Leather Sandals"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Sandals
+                </span>
+
+                <h3>
+                    Premium Leather Sandals
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹899
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,199
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Premium Leather Sandals',
+                        899,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Premium Leather Sandals',
+                        899,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 7 -->
+
+        <div
+            class="product-card"
+            data-category="casual"
+            data-name="Classic Blue Casual Shoes"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    20% OFF
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1495555961986-6d4c1ecb7be3?w=800"
+                    alt="Blue Casual Shoes"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Casual Shoes
+                </span>
+
+                <h3>
+                    Classic Blue Casual Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★☆
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,199
+                    </span>
+
+                    <span class="mrp">
+                        ₹1,499
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Classic Blue Casual Shoes',
+                        1199,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Classic Blue Casual Shoes',
+                        1199,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PRODUCT 8 -->
+
+        <div
+            class="product-card"
+            data-category="formal"
+            data-name="Brown Leather Formal Shoes"
+        >
+
+            <div class="product-image">
+
+                <span class="discount">
+                    22% OFF
+                </span>
+
+                <span class="new-label">
+                    NEW
+                </span>
+
+                <img
+                    src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800"
+                    alt="Brown Formal Shoes"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <span class="product-category">
+                    Formal Shoes
+                </span>
+
+                <h3>
+                    Brown Leather Formal Shoes
+                </h3>
+
+                <div class="rating">
+                    ★★★★★
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="sale-price">
+                        ₹1,999
+                    </span>
+
+                    <span class="mrp">
+                        ₹2,599
+                    </span>
+
+                </div>
+
+
+                <label class="size-label">
+                    Select Size
+                </label>
+
+                <select class="size-select">
+
+                    <option value="">
+                        Choose Size
+                    </option>
+
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+
+                </select>
+
+
+                <div class="product-buttons">
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart(
+                        'Brown Leather Formal Shoes',
+                        1999,
+                        this)"
+                    >
+                        Add Cart
+                    </button>
+
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow(
+                        'Brown Leather Formal Shoes',
+                        1999,
+                        this)"
+                    >
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OFFER
+===================================================== -->
+
+<section class="offer-banner">
+
+    <div>
+
+        <h2>
+            Step Up Your Style
+        </h2>
+
+        <p>
+            Special collection available now.
+            <span>Limited offers available.</span>
+        </p>
+
+    </div>
+
+
+    <a
+        href="#shop"
+        class="primary-btn"
+    >
+        Explore Shoes
+    </a>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about"
+    id="about"
+>
+
+    <div class="about-image">
+
+        <img
+            src="shop.jpg"
+            alt="Adarsh Footwear Store"
+        >
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="section-label">
+            ABOUT OUR STORE
+        </div>
+
+        <h2>
+            Welcome to Adarsh Footwear
+        </h2>
+
+
+        <p>
+
+            We offer stylish and comfortable
+            footwear for everyday wear, office,
+            parties, sports and special occasions.
+
+        </p>
+
+
+        <ul class="about-list">
+
+            <li>
+                ✓ Sports & Running Shoes
+            </li>
+
+            <li>
+                ✓ Casual Shoes & Sneakers
+            </li>
+
+            <li>
+                ✓ Formal Shoes & Loafers
+            </li>
+
+            <li>
+                ✓ Sandals & Daily Wear
+            </li>
+
+            <li>
+                ✓ Multiple Sizes Available
+            </li>
+
+        </ul>
+
+
+        <a
+            href="#contact"
+            class="primary-btn"
+        >
+            Contact Store
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="contact"
+    id="contact"
+>
+
+    <h2>
+        Contact Adarsh Footwear
+    </h2>
+
+    <p>
+        Have a question? Contact us directly.
+    </p>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <div class="contact-card-icon">
+                📞
+            </div>
+
+            <h3>
+                Call Us
+            </h3>
+
+            <p>
+                +91 XXXXXXXXXX
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-card-icon">
+                💬
+            </div>
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <p>
+                Order & Enquiry
+            </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-card-icon">
+                📍
+            </div>
+
+            <h3>
+                Visit Our Store
+            </h3>
+
+            <p>
+                Adarsh Footwear
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CART OVERLAY
+===================================================== -->
+
+<div
+    class="overlay"
+    id="overlay"
+    onclick="closeCart()"
+></div>
+
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<div
+    class="cart"
+    id="cart"
+>
+
+    <div class="cart-header">
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+        <button
+            class="cart-close"
+            onclick="closeCart()"
+        >
+            ✕
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    >
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <strong>
+                Total
+            </strong>
+
+            <strong>
+                ₹<span id="cartTotal">0</span>
+            </strong>
+
+        </div>
+
+
+        <button
+            class="whatsapp-btn"
+            onclick="checkoutWhatsApp()"
+        >
+
+            💬 Order on WhatsApp
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    Added to cart ✓
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h2>
+        👟 Adarsh Footwear
+    </h2>
+
+    <p>
+        Quality Footwear • Great Prices • Happy Customers
+    </p>
+
+    <p>
+        © 2026 Adarsh Footwear. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   CART ARRAY
+===================================================== */
+
+let cart = [];
+
+
+
+/* =====================================================
+   ADD TO CART
+===================================================== */
+
+function addToCart(name, price, button) {
+
+    const card =
+        button.closest(".product-card");
+
+
+    const size =
+        card.querySelector(".size-select").value;
+
+
+    if (size === "") {
+
+        showToast(
+            "Please select a shoe size first."
+        );
+
+        return;
+    }
+
+
+    const existing =
+        cart.find(
+            item =>
+                item.name === name &&
+                item.size === size
+        );
+
+
+    if (existing) {
+
+        existing.quantity++;
+
+    } else {
+
+        cart.push({
+
+            name: name,
+
+            price: price,
+
+            size: size,
+
+            quantity: 1
+
+        });
+
+    }
+
+
+    updateCart();
+
+    showToast(
+        "Shoe added to cart ✓"
+    );
+
+}
+
+
+
+/* =====================================================
+   BUY NOW
+===================================================== */
+
+function buyNow(name, price, button) {
+
+    const card =
+        button.closest(".product-card");
+
+
+    const size =
+        card.querySelector(".size-select").value;
+
+
+    if (size === "") {
+
+        showToast(
+            "Please select a shoe size first."
+        );
+
+        return;
+    }
+
+
+    const message =
+
+        "Hello Adarsh Footwear,%0A%0A" +
+
+        "I want to buy:%0A%0A" +
+
+        "👟 " + name + "%0A" +
+
+        "Size: " + size + "%0A" +
+
+        "Price: ₹" + price + "%0A%0A" +
+
+        "Please confirm availability.";
+
+
+    /*
+       IMPORTANT:
+       Replace this number with your
+       actual WhatsApp number.
+
+       Example:
+       919876543210
+    */
+
+    const phoneNumber =
+        "919XXXXXXXXX";
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phoneNumber +
+        "?text=" +
+        message;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+
+/* =====================================================
+   UPDATE CART
+===================================================== */
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+
+    cartItems.innerHTML = "";
+
+
+    let total = 0;
+
+    let count = 0;
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML =
+            `
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+            `;
+
+    }
+
+
+    cart.forEach(
+        (item, index) => {
+
+
+            total +=
+                item.price *
+                item.quantity;
+
+
+            count +=
+                item.quantity;
+
+
+            const itemBox =
+                document.createElement("div");
+
+
+            itemBox.className =
+                "cart-item";
+
+
+            itemBox.innerHTML =
+
+                `
+                <div>
+
+                    <h4>
+                        ${item.name}
+                    </h4>
+
+                    <p>
+                        Size: ${item.size}
+                    </p>
+
+                    <p>
+                        ₹${item.price}
+                        × ${item.quantity}
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="remove"
+                    onclick="removeItem(${index})"
+                >
+                    Remove
+                </button>
+
+                `;
+
+
+            cartItems.appendChild(
+                itemBox
+            );
+
+        }
+    );
+
+
+    cartCount.innerText =
+        count;
+
+
+    cartTotal.innerText =
+        total;
+
+}
+
+
+
+/* =====================================================
+   REMOVE CART ITEM
+===================================================== */
+
+function removeItem(index) {
+
+    cart.splice(
+        index,
+        1
+    );
+
+
+    updateCart();
+
+}
+
+
+
+/* =====================================================
+   OPEN CART
+===================================================== */
+
+function openCart() {
+
+    document
+        .getElementById("cart")
+        .classList.add("active");
+
+
+    document
+        .getElementById("overlay")
+        .classList.add("active");
+
+}
+
+
+
+/* =====================================================
+   CLOSE CART
+===================================================== */
+
+function closeCart() {
+
+    document
+        .getElementById("cart")
+        .classList.remove("active");
+
+
+    document
+        .getElementById("overlay")
+        .classList.remove("active");
+
+}
+
+
+
+/* =====================================================
+   FILTER PRODUCTS
+===================================================== */
+
+function filterProducts(
+    category,
+    button
+) {
+
+
+    const products =
+        document.querySelectorAll(
+            ".product-card"
+        );
+
+
+    document
+        .querySelectorAll(
+            ".filter-btn"
+        )
+        .forEach(
+            btn =>
+                btn.classList.remove(
+                    "active"
+                )
+        );
+
+
+    button.classList.add(
+        "active"
+    );
+
+
+    products.forEach(
+        product => {
+
+
+            const productCategory =
+                product.dataset.category;
+
+
+            if (
+                category === "all" ||
+                productCategory === category
+            ) {
+
+                product.style.display =
+                    "block";
+
+            } else {
+
+                product.style.display =
+                    "none";
+
+            }
+
+        }
+    );
+
+
+    /*
+       Search box clear
+       kar dete hain.
+    */
+
+    document
+        .getElementById(
+            "searchInput"
+        )
+        .value = "";
+
+}
+
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+function searchProducts() {
+
+
+    const search =
+        document
+            .getElementById(
+                "searchInput"
+            )
+            .value
+            .toLowerCase();
+
+
+    const products =
+        document.querySelectorAll(
+            ".product-card"
+        );
+
+
+    products.forEach(
+        product => {
+
+
+            const name =
+                product.dataset.name
+                    .toLowerCase();
+
+
+            if (
+                name.includes(search)
+            ) {
+
+                product.style.display =
+                    "block";
+
+            } else {
+
+                product.style.display =
+                    "none";
+
+            }
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   WHATSAPP CART CHECKOUT
+===================================================== */
+
+function checkoutWhatsApp() {
+
+
+    if (
+        cart.length === 0
+    ) {
+
+        showToast(
+            "Your cart is empty."
+        );
+
+        return;
+    }
+
+
+    let message =
+
+        "Hello Adarsh Footwear,%0A%0A" +
+
+        "I want to order these products:%0A%0A";
+
+
+    let total = 0;
+
+
+    cart.forEach(
+        item => {
+
+
+            const itemTotal =
+                item.price *
+                item.quantity;
+
+
+            total +=
+                itemTotal;
+
+
+            message +=
+
+                "👟 " +
+                item.name +
+                "%0A" +
+
+                "Size: " +
+                item.size +
+                "%0A" +
+
+                "Quantity: " +
+                item.quantity +
+                "%0A" +
+
+                "Price: ₹" +
+                itemTotal +
+                "%0A%0A";
+
+        }
+    );
+
+
+    message +=
+
+        "Total: ₹" +
+        total +
+        "%0A%0A" +
+
+        "Please confirm availability.";
+
+
+    /*
+       CHANGE THIS NUMBER
+
+       Example:
+       919876543210
+    */
+
+    const phoneNumber =
+        "919XXXXXXXXX";
+
+
+    const url =
+
+        "https://wa.me/" +
+
+        phoneNumber +
+
+        "?text=" +
+
+        message;
+
+
+    window.open(
+        url,
+        "_blank"
+    );
+
+}
+
+
+
+/* =====================================================
+   TOAST MESSAGE
+===================================================== */
+
+function showToast(message) {
+
+
+    const toast =
+        document.getElementById(
+            "toast"
+        );
+
+
+    toast.innerText =
+        message;
+
+
+    toast.classList.add(
+        "show"
+    );
+
+
+    setTimeout(
+        () => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        },
+        2500
+    );
+
+}
+
+
+</script>
+https://ind.5bestincity.com/profileimages/india/adarsh-footwear-shoe-store-kolhapur-maharashtra/33020-40be3-1.jpg
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlz1WH5vpTTBUPPhtPF0lduFFKmHEQnfqqJfsLn8w_XQ&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7uztJE2XlQY_P0ofX3Iik005Z_d9-yW5pu8coqu9zig&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xx8dMtcJ9fp-xf07o2mVS6usSjQQxfoP_LjVNIPtdA&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbcS5nNFwF8GIMYd9X-tGPFHnHEDHPekCpjuunL0vsA&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVM96PihIvK_xArF2c2Fp4f3ikOIPcKUwT_hm10xjjqw&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW8vRQlGvIGHKmtyZvVUrdQ2x3EmsypEPgiEZb5Qk_Bg&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ11lkbR1PZxbUcQFK2T20SycDQQdpFysxDyO4zxUXhw&s
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxwzr1v-2v_l17z91oVIf8ncXxyxcXfe9ViA84f0TOA&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBGvsF9pIFC_vvdbQR_oEU65isRaI-2kKo6-r_dG7cRA&s=10
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-C08wmx-nkuwssBkC2dv_XPt8hz-SdGrAprrXU3aIg&s=10
+
+</body>
+
+</html>
